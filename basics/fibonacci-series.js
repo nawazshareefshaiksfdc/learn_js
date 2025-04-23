@@ -37,4 +37,17 @@ let data3 = (num) =>{
     }
  console.log(myobj);
 }
-data3(6);
+
+let data4 = (num) => {
+ let n1 = 0;
+ let n2 = 1;
+ let tot;
+ for (let i = 0; i < num; i++) {
+   tot = n1 + n2;
+   n1 = n2;
+   n2 = tot; 
+ }
+ console.log(`the value of ${num} is `+n1);
+}
+
+data4(5);
