@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" alt="pic_bulboff" id="image">
+    <button type="button" title="bulb button" onclick="bulbChange()">switch</button>
+    <script>
+        let bulb = document.getElementById("image");
+        let toggle = false;
+        let bulbChange = () => {
+            bulb.src = toggle ? "https://www.w3schools.com/js/pic_bulboff.gif" : "https://www.w3schools.com/js/pic_bulbon.gif";
+            toggle = !toggle;
+        }
+        bulb.src
+    </script>
+</body>
+</html>

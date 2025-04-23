@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hello">this is nawaz</h1>
+<button title="click me" type="button" onclick="data()"> click me</button>
+    <script>
+        let toggle = false;
+        let data = () =>{
+            const texElement =  document.getElementById("hello")
+            texElement.innerHTML = toggle ?'this is nawaz' :'hello this is nawaz shareef software Engineer' ;
+            toggle = !toggle;      
+window.alert('hello world')
+        }
+    </script>
+</body>
+</html>
