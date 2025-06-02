@@ -51,3 +51,11 @@ let data4 = (num) => {
 }
 
 data4(5);
+
+let fib = (prev1, prev2, count) => {
+    console.log(prev2);
+    if (count === 0) return;
+    fib(prev1 + prev2, prev1, count - 1);
+};
+
+fib(1, 0, 20);
